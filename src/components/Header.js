@@ -3,13 +3,11 @@ import '../styles/Header.css'
 
 function Header() {
   return(
-    <>
-      <div className="row">
-        <div className="col">
-            <h1 className="text-center">Employee Reactory</h1>
-        </div>
+    <div className="row headerRow">
+      <div className="col">
+          <h1 className="text-center">Employee Reactory</h1>
       </div>
-    </>
+    </div>
   )
 }
 
