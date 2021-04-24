@@ -5,3 +5,7 @@
 tr {
   background-color: #E7ECEF;
 }
+
+td, thead{
+  border: rgb(187, 187, 187) solid 2px;
+}
