@@ -1,18 +1,10 @@
 import React from 'react';
 import '../../styles/Table.css'
 import Rows from './Rows';
-
-function Table() {
-  let employees = [
-      {
-      id: 1, image: "picture", first: "John", last: "Appleseed", email: "email"
-      },
-      {
-        id: 2, image: "picture", first: "Foo", last: "Bar", email: "email2"
-      }
-  ];
-  return (
-    <div className="row">
+class Table extends React.Component {
+  render() {
+    return (
+      <div className="row mx-5">
       <table className="table">
         <thead className="tableHeader">
           <tr>
@@ -23,11 +15,12 @@ function Table() {
           </tr>
         </thead>
         <tbody>
-          <Rows employees={employees} />
+          <Rows />
         </tbody>
       </table>
     </div>
-  )
+    )
+  }
 }
 
 export default Table;
