@@ -25,7 +25,7 @@ class Rows extends React.Component {
         {this.state.employees.length > 0 &&
           this.state.employees.map(employee => (
             <tr key={employee.name.first + employee.name.last + employee.email}>
-              <td className="text-center"><img src={employee.picture.medium}></img></td>
+              <td className="text-center"><img alt="random user imported from randomuser.me/api" src={employee.picture.medium}></img></td>
               <td className="text-center">{employee.name.first}</td>
               <td className="text-center">{employee.name.last}</td>
               <td className="text-center">{employee.phone}</td>
