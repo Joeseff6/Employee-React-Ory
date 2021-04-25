@@ -8,7 +8,7 @@ function Table({search}) {
   let [unfilteredEmployees, setUnfilteredEmployees] = useState([]);
   let [filteredEmployees] = useState([]);
 
-  useEffect(async () => {
+  useEffect( () => {
     getEmployees();
   }, [])
 
@@ -37,7 +37,6 @@ function Table({search}) {
     const { results } = await getEmployees.json();
     setUnfilteredEmployees(unfilteredEmployees = results);
     setEmployees(employees = unfilteredEmployees);
-    console.log(employees)
   };
 
   return (
