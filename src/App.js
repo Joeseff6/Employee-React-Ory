@@ -1,6 +1,5 @@
 import Header from './components/Header';
 import Search from './components/Search';
-import Table from './components/TableComp/Table' 
 
 function App() {
   return (
@@ -8,7 +7,6 @@ function App() {
       <div className="container-fluid">
         <Header />
         <Search />
-        <Table /> 
       </div>
     </>
   );
