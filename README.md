@@ -30,7 +30,7 @@ Employee Reactory is an application that is mainly used for demonstrating how po
 ## Goals for Deployment
 
 - [x] When the user visits the application, they will be presented with random user data
-- [] When the user types in the search bar, the page will dynamically change to return the users matching the criteria
+- [x] When the user types in the search bar, the page will dynamically change to return the users matching the criteria
 - [] The user can click on a column header to sort the data by that column
 
 ## Screenshots
