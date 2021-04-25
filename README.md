@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+![GitHub](https://img.shields.io/github/license/Joeseff6/Employee-React-Ory)
+# Employee-React-Ory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React web application used to search for an employee in a directory
+## Link to Deployed Application 🔗
 
-## Available Scripts
+_Insert link here_
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+1. [Project Description](#project-description)
+2. [What to Expect From the Application](#What-to-Expect-From-the-Application)
+3. [Tech Stack](#Tech-Stack)
+4. [Goals for Deployment](#Goals-for-Deployment)
+5. [Screenshots](#Screenshots)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Description 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The purpose of this project is to build a React web-application that is interactive and dynamic. The difference between this project and others that don't use React is strictly in the code; a user won't see the differences between a React app and others built with traditional Javascript and DOM manipulation. However, React.js makes building truly interactive front end applications cheaper (memory-wise) and more convenient when re-using common components, like buttons, tables, lists, and more!
 
-### `npm test`
+## What to Expect From the Application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Employee Reactory is an application that is mainly used for demonstrating how powerful React.js can be in regards to UI. Random user information is obtained by calling the Random User Generator (randomuser.me/api) and is displayed in a table. Since the API returns random information per request, new users will be displayed upon refresh. One of the capabilities of React is the ability to change component states, which in turn re-renders the component to display the new state (or perform other functions). This is demonstrated through the search bar function, which will dynamically return users that match the search criteria as they type.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Front-end: CSS3/HTML5
+* Front-end/back-end logic: Javascript
+* User-Interface: React.js
+## Goals for Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [x] When the user visits the application, they will be presented with random user data
+- [] When the user types in the search bar, the page will dynamically change to return the users matching the criteria
+- [] The user can click on a column header to sort the data by that column
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+![Homepage of the Employee Reactory app](./assets/Images/Capture1.JPG)
+![]()
+![]()
