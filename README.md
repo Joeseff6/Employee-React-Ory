@@ -35,5 +35,5 @@ Employee Reactory is an application that is mainly used for demonstrating how po
 
 ## Screenshots
 ![Homepage of the Employee Reactory app](./assets/Images/Capture1.JPG)
-![Demo of employees filtered by search](./assets/Images/Capture1.JPG)
+![Demo of employees filtered by search](./assets/Images/Capture2.JPG)
 ![]()
