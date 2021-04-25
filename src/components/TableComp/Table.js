@@ -1,16 +1,44 @@
 import React, {useState, useEffect} from 'react';
-import '../../styles/Table.css'
+import '../../styles/Table.css';
 import Rows from './Rows';
 import API from '../../utils/API';
 
-function Table() {
+function Table({search}) {
   let [employees,setEmployees] = useState([]);
+  let [unfilteredEmployees, setUnfilteredEmployees] = useState([]);
+  let [filteredEmployees] = useState([]);
 
   useEffect(async () => {
-    const getEmployees = await API.fetchEmployees();
-    const { results } = await getEmployees.json()
-    setEmployees(employees = results)
+    getEmployees();
   }, [])
+
+  useEffect(() =>{
+    filterEmployees();
+  },[search])
+  
+  const filterEmployees = () => {
+    setEmployees(employees = unfilteredEmployees);
+    filteredEmployees = employees.filter(employee =>{
+      if (
+        employee.name.first.includes(search) ||
+        employee.name.last.includes(search) ||
+        employee.phone.includes(search) ||
+        employee.email.includes(search)) {
+          return true
+        } else {
+          return false
+        }
+    })
+    setEmployees(employees = filteredEmployees)
+  }
+
+  const getEmployees = async() => {
+    const getEmployees = await API.fetchEmployees();
+    const { results } = await getEmployees.json();
+    setUnfilteredEmployees(unfilteredEmployees = results);
+    setEmployees(employees = unfilteredEmployees);
+    console.log(employees)
+  };
 
   return (
     <div className="row mx-5">
@@ -30,6 +58,6 @@ function Table() {
     </table>
   </div>
   )
-}
+};
 
 export default Table;
