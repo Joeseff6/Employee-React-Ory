@@ -17,4 +17,4 @@ function Rows({employees}) {
   )
 }
 
-  export default Rows;
+export default Rows;
