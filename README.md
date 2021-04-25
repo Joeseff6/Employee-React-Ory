@@ -4,7 +4,7 @@
 A React web application used to search for an employee in a directory
 ## Link to Deployed Application 🔗
 
-_Insert link here_
+_https://6084df12013240904a42fc25--hardcore-colden-4705c7.netlify.app/_
 
 ## Table of Contents
 
