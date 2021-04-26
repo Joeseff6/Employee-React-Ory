@@ -12,7 +12,6 @@ function Table({search}) {
     .then(response => response.json())
     .then(object => {
       const {results} = object
-      setEmployees(results);
       setUnfilteredEmployees(results);
     })
   }, [])
